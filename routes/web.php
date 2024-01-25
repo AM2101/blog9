@@ -18,9 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('user/{id}',[UserController::class,'show']);
-Route::post('users',[UserController::class,'getData']);
-Route::view('login','users');
+// Route::get('user/{id}',[UserController::class,'show']);
+// Route::post('users',[UserController::class,'getData']);
+// Route::view('login','users');
 
-Route::view("about",'/about');
-Route::view("contact",'/contact');
+// Route::view("about",'/about');
+// Route::view("contact",'/contact');
+
+Route::get('users',[UserController::class,'index']);
