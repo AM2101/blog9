@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\apiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,6 @@ Route::get('/', function () {
 // Route::view("about",'/about');
 // Route::view("contact",'/contact');
 
-Route::get('users',[UserController::class,'index']);
+// Route::get('users',[UserController::class,'index']);
+
+ Route::get("/api",[apiController::class,'index']);
